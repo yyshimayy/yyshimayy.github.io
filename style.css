@@ -1,18 +1,137 @@
 @charset "UTF-8";
 
+
+
 html {
   font-size: 100%;
 }
-
 body {
-  width: 1000px;
+  background-color: #f4f9ff;
+  color: #333;
+  font-size: 0.875rem;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#header {
+  margin-top: 60px;
+}
+#header .site-title{
+  width: 160px;
+  line-height: 1px;
+  margin-bottom: 15px;
+}
+#header .site-title a {
+  display: block;
+}
+#mainvisual {
+  margin-bottom: 60px;
+}
+#index {
+  background-color: #fff;
+  padding: 30px 0;
+  margin-bottom: 60px;
+}
+#index .index-list {
+  margin-left: 20px;
+}
+#index .index-list li {
+  margin-bottom: 20px;
+}
+#index .index-list li:last-child {
+  margin-bottom: 0;
+}
+#detail {
+  margin-bottom: 100px;
+}
+#detail .content {
+  display: flex;
+  align-items: flex-start;
+}
+#detail .content .title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+#detail .content .img {
+  width: 270px;
+  margin-right: 60px;
+}
+#detail .content .text p {
+  margin-bottom: 20px;
+}
+#detail .content dl {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  margin-bottom: 25px;
+  border-top: solid 1px #dedede;
+  border-bottom: solid 1px #dedede;
+}
+#detail .content dt {
+  width: 25%;
+}
+#detail .content dd {
+  width: 75%;
+}
+#detail .content .link {
+  color: #333
+}
+#detail .content .link:hover {
+  opacity: 0.8;
+}
+
+#footer {
+  font-size: 0.625rem;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 40px;
+  }
+  #header {
+    padding: 0 10px;
+  }
+  #mainvisual {
+    padding: 0 10px;
+  }
+  #detail .content {
+    flex-direction: column;
+  }
+  #detail .content .img {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+}
+
+/* body {
+  max-width: 1000px;
   margin: 0 auto;
   background: #F4F9FF;
 }
 
 .a-content {
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
+}
+img {
+  max-width: 100%;
 }
 
 /*------------------------------
@@ -104,4 +223,4 @@ body {
   .a-container img {
     margin-bottom: 25px;
   }
-}
+} */
