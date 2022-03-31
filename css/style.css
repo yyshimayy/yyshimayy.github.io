@@ -8,7 +8,125 @@ body {
   color: #2B2A27;
   margin: 0;
 }
-li {
+
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #2b2a27;
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+/*
+「width: 100%;」と「height: 100vh;」で全画面表示にする。
+「object-fit: cover;」でトリミングを行い、「object-position: center top;」で
+横は中央、縦をトップに配置する。
+*/
+#mainvisual img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 80px;
+}
+
+/*-------------------------------------------
+Text
+-------------------------------------------*/
+.text {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+.text .site-title {
+  margin-bottom: 20px;
+}
+/*
+「display: inline-block;」でaタグに幅と高さを持たせる。
+paddingでボタンのサイズを調整。
+*/
+.text .btn {
+  display: inline-block;
+  border: solid 1px #2b2a27;
+  font-size: 0.875rem;
+  padding: 18px 60px;
+  text-decoration: none;
+}
+
+/*-------------------------------------------
+Image
+-------------------------------------------*/
+.flex {
+  display: flex;
+  margin-bottom: 60px;
+}
+/*
+「calc(100%/3);」で、widthの値が3等分になるよう計算する。
+※「calc」は、割り切れない数で均等に配置したい場合などに便利。
+*/
+.flex li {
+  width: calc(100%/3);
+}
+/*
+「object-fit: cover;」で、高さを固定したまま
+画面幅に合わせて画像を伸縮させることができる。
+（※IEでは正しく動作しないため注意が必要）
+「vertical-align: bottom;」で画像の下にできる隙間を消す。
+*/
+.flex li img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+/*-------------------------------------------
+Footer
+-------------------------------------------*/
+#footer {
+  font-size: 0.75rem;
+  padding: 20px;
+  text-align: center;
+}
+/*
+リンクはul、liタグで記述
+SNSのリンク集という、一つの意味をもったリスト群になるので、ul、liタグでグルーピング
+※リストタグを使用しなくても問題ないが、使用した方が検索エンジンに対して
+より適切に意味を伝えることができると考えリストタグを選択しています。
+*/
+#footer .sns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#footer .sns li {
+  margin: 0 10px;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 834px) {
+  /*-------------------------------------------
+  Image
+  -------------------------------------------*/
+  /*
+  「flex-direction: column;」で縦並びにする
+  */
+  .flex {
+    flex-direction: column;
+  }
+  .flex li {
+    width: 100%;
+  }
+}
+
+/* li {
   list-style: none;
 }
 img {
@@ -108,4 +226,4 @@ footer p {
   .p-subvisual li {
     width: 100%;
   }
-}
+} */
