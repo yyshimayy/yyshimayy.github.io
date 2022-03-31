@@ -16,6 +16,7 @@ li {
   max-width: 100%;
   margin-bottom: 80px;
   line-height: 1px;
+  height: 100vh;
 }
 #a-mainvisual .p-mainvisual {
   max-width: 100%; 
