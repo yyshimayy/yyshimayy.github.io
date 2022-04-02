@@ -1,1 +1,0 @@
-# yyshimayy.github.io
