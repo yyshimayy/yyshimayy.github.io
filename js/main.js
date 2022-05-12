@@ -4,6 +4,7 @@ $(function() {
       $header = $('.header'),
       fvHeight = $fv.outerHeight();
       fixedClass = 'fixed';
+
     $win.on('load scroll',function(){
       var value = $(this).scrollTop();
       if($win.width() > 768){
@@ -15,7 +16,7 @@ $(function() {
       }
     });
     
-    
+    //ハンバーガーメニュー
     $('.burger_btn').on('click', function() {
       if ($('.header').hasClass('open')) {
         $('.header').removeClass('open');
@@ -34,9 +35,13 @@ $(function() {
     $('.a_header_nav a').on('click', function() {
       $('.header').removeClass('open');
     });
-});
 
-//スライダー
-$('.slider').slick({
-
-});
+    //スライダー
+    $('.slider').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      fade: true,
+      speed: 1000,
+      cssEase: 'linear'
+    });
+  });
