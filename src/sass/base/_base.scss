@@ -1,0 +1,27 @@
+@use "../global" as *;
+html {
+  font-size: 16px;
+  background-color: #F5F5F5;
+}
+
+body {
+  font-family: $base-font;
+  color: $black;
+}
+
+// PCでは電話番号のクリックを無効にする
+a[href^="tel:"] {
+  pointer-events: none;
+  @include mq("md") {
+    pointer-events: auto;
+  }
+}
+
+// aタグには標準でホバーアニメーションが付与されるようにする
+a {
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}

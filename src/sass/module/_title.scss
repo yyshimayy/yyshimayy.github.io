@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.title {
+  text-align: center;
+}
+
+.title__main {
+  margin-bottom: 10px;
+}
+
+.title__sub {
+  position: relative;
+  font-size: 10px;
+}
+
+.title__sub::after {
+  content: "";
+  background-color: skyblue;
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}

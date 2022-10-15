@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.button {
+  display: block;
+  text-align: center;
+  width: 200px;
+  padding: 8px 25px 8px 10px;
+  color: $black;
+  box-shadow: 1px 1px 3px gray;
+  margin: 0 auto;
+  position: relative;
+  background-color: skyblue;
+  color: $white;
+}
+
+.button::before{
+  content: "";
+  width: 35px;
+  height: 2px;
+  background: $white;
+  position: absolute;
+  top: 0;
+  left: 125px;
+  bottom: 0;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.button::after{
+  content: "";
+  width: 14px;
+  height: 4px;
+  border-top: 3px solid $white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: -9px;
+  left: 147px;
+  bottom: 0;
+  margin: auto;
+  vertical-align: middle;
+}

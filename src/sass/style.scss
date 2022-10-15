@@ -1,0 +1,161 @@
+@use "./base/base";
+@use "./base/reset";
+@use "./global" as *;
+@use "./module" as *;
+
+//タイトル
+// .title {
+//   text-align: center;
+// }
+
+// .title__main {
+//   margin-bottom: 10px;
+// }
+
+// .title__sub {
+//   position: relative;
+//   font-size: 10px;
+// }
+
+// .title__sub::after {
+//   content: "";
+//   background-color: skyblue;
+//   width: 70px;
+//   height: 2px;
+//   position: absolute;
+//   top: 40px;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+
+//アコーディオン
+// .top-accordion {
+//   margin-top: 40px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   max-width: 840px;
+//   padding: 0 40px;
+// }
+
+// .accordion {
+//   max-width: 800px;
+//   width: 100%;
+//   margin: 0 auto;
+//   padding: 40px;
+//   position: relative;
+// }
+
+// .accordion::before {
+//   content: "";
+//   width: 0;
+//   height: 0;
+//   border-style: solid;
+//   border-width: 200px 260px 0 0;
+//   border-color: #D8EBF1 transparent transparent transparent;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: -1;
+// }
+
+// .accordion__content {
+//   margin-bottom: 20px;
+// }
+
+// .accordion__title {
+//   background-color: $white;
+//   padding: 10px 54px 10px 20px;
+//   position: relative;
+// }
+
+// .accordion__title span {
+//   color: skyblue;
+//   margin-right: 10px;
+// }
+
+// .accordion__answer {
+//   padding: 0 54px 0 20px;
+//   line-height: 0;
+//   height: 0;
+//   opacity: 0;
+//   transition-duration: .3s;
+// }
+
+// .accordion__answer span {
+//   color: red;
+//   margin-right: 10px;
+// }
+
+// .accordion__answer.is-open {
+//   background-color: #E5E5E5;
+//   padding: 10px 54px 10px 20px;
+//   line-height: normal;
+//   height: auto;
+//   opacity: 1;
+// }
+
+// .accordion__title::before, .accordion__title::after {
+//   content: '';
+//   display: block;
+//   background-color: $black;
+//   position: absolute;
+//   top: 50%;
+//   width: 15px;
+//   height: 2px;
+//   right: 25px;
+//   cursor: pointer;
+// }
+
+// .accordion__title::after {
+//   transform: rotate(90deg);
+//   transition-duration: .3s;
+// }
+
+// .accordion__title.is-active::before {
+//   opacity: 0;
+// }
+
+// .accordion__title.is-active::after {
+//   transform: rotate(0);
+// }
+
+// ボタン
+// .button {
+//   display: block;
+//   text-align: center;
+//   width: 200px;
+//   padding: 8px 25px 8px 10px;
+//   color: $black;
+//   box-shadow: 1px 1px 3px gray;
+//   margin: 0 auto;
+//   position: relative;
+//   background-color: skyblue;
+//   color: $white;
+// }
+
+// .button::before{
+//   content: "";
+//   width: 35px;
+//   height: 2px;
+//   background: $white;
+//   position: absolute;
+//   top: 0;
+//   left: 125px;
+//   bottom: 0;
+//   margin: auto;
+//   vertical-align: middle;
+// }
+// .button::after{
+//   content: "";
+//   width: 14px;
+//   height: 4px;
+//   border-top: 3px solid $white;
+//   -webkit-transform: rotate(45deg);
+//   transform: rotate(45deg);
+//   position: absolute;
+//   top: -9px;
+//   left: 147px;
+//   bottom: 0;
+//   margin: auto;
+//   vertical-align: middle;
+// }
